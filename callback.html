@@ -1,0 +1,87 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    
+      <meta charset="utf-8">
+      <title>Bokeh Plot</title>
+      
+      
+        
+          
+        <link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-1.0.4.min.css" type="text/css" />
+        <link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-widgets-1.0.4.min.css" type="text/css" />
+        
+        
+          
+        <script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-1.0.4.min.js"></script>
+        <script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-widgets-1.0.4.min.js"></script>
+        <script type="text/javascript">
+            Bokeh.set_log_level("info");
+        </script>
+        
+      
+      
+    
+  </head>
+  
+  
+  <body>
+    
+      
+        
+          
+          
+            
+              <div class="bk-root" id="ee5ff5b8-e1c4-4fb8-9e65-28ac7f96cf68" data-root-id="2192"></div>
+            
+          
+        
+      
+      
+        <script type="application/json" id="2374">
+          {"10b3f766-ee20-458f-b62a-aa272fac469b":{"roots":{"references":[{"attributes":{"children":[{"id":"2191","type":"WidgetBox"},{"id":"2150","subtype":"Figure","type":"Plot"}]},"id":"2192","type":"Column"},{"attributes":{"plot":null,"text":""},"id":"2240","type":"Title"},{"attributes":{"data_source":{"id":"2149","type":"ColumnDataSource"},"glyph":{"id":"2185","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"2186","type":"Line"},"selection_glyph":null,"view":{"id":"2188","type":"CDSView"}},"id":"2187","type":"GlyphRenderer"},{"attributes":{"line_alpha":0.1,"line_color":"#1f77b4","line_width":3,"x":{"field":"x"},"y":{"field":"y"}},"id":"2186","type":"Line"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_multi":null,"active_scroll":"auto","active_tap":"auto","tools":[{"id":"2169","type":"PanTool"},{"id":"2170","type":"WheelZoomTool"},{"id":"2171","type":"BoxZoomTool"},{"id":"2172","type":"SaveTool"},{"id":"2173","type":"ResetTool"},{"id":"2174","type":"HelpTool"}]},"id":"2175","type":"Toolbar"},{"attributes":{},"id":"2169","type":"PanTool"},{"attributes":{},"id":"2170","type":"WheelZoomTool"},{"attributes":{"callback":null,"data":{"x":[0,1,2,3,4,5,6,7,8,9],"y":[0,1,2,3,4,5,6,7,8,9]},"selected":{"id":"2247","type":"Selection"},"selection_policy":{"id":"2246","type":"UnionRenderers"}},"id":"2149","type":"ColumnDataSource"},{"attributes":{"line_alpha":0.6,"line_color":"#1f77b4","line_width":3,"x":{"field":"x"},"y":{"field":"y"}},"id":"2185","type":"Line"},{"attributes":{"overlay":{"id":"2177","type":"BoxAnnotation"}},"id":"2171","type":"BoxZoomTool"},{"attributes":{"callback":{"id":"2189","type":"CustomJS"},"labels":["CHG","DSP","NOT"]},"id":"2190","type":"CheckboxButtonGroup"},{"attributes":{"below":[{"id":"2159","type":"LinearAxis"}],"left":[{"id":"2164","type":"LinearAxis"}],"plot_height":200,"plot_width":200,"renderers":[{"id":"2159","type":"LinearAxis"},{"id":"2163","type":"Grid"},{"id":"2164","type":"LinearAxis"},{"id":"2168","type":"Grid"},{"id":"2177","type":"BoxAnnotation"},{"id":"2187","type":"GlyphRenderer"}],"title":{"id":"2240","type":"Title"},"toolbar":{"id":"2175","type":"Toolbar"},"x_range":{"id":"2151","type":"DataRange1d"},"x_scale":{"id":"2155","type":"LinearScale"},"y_range":{"id":"2153","type":"DataRange1d"},"y_scale":{"id":"2157","type":"LinearScale"}},"id":"2150","subtype":"Figure","type":"Plot"},{"attributes":{},"id":"2172","type":"SaveTool"},{"attributes":{},"id":"2173","type":"ResetTool"},{"attributes":{"args":{"ll":{"id":"2187","type":"GlyphRenderer"},"source":{"id":"2149","type":"ColumnDataSource"}},"code":"var _pyfunc_op_contains = function op_contains (a, b) { // nargs: 2\n    if (b == null) {\n    } else if (Array.isArray(b)) {\n        for (var i=0; i&lt;b.length; i++) {if (_pyfunc_op_equals(a, b[i]))\n                                           return true;}\n        return false;\n    } else if (b.constructor === Object) {\n        for (var k in b) {if (a == k) return true;}\n        return false;\n    } else if (b.constructor == String) {\n        return b.indexOf(a) &gt;= 0;\n    } var e = Error('Not a container: ' + b); e.name='TypeError'; throw e;\n};\nvar _pyfunc_op_equals = function op_equals (a, b) { // nargs: 2\n    var a_type = typeof a;\n    // If a (or b actually) is of type string, number or boolean, we don't need\n    // to do all the other type checking below.\n    if (a_type === \"string\" || a_type === \"boolean\" || a_type === \"number\") {\n        return a == b;\n    }\n\n    if (a == null || b == null) {\n    } else if (Array.isArray(a) &amp;&amp; Array.isArray(b)) {\n        var i = 0, iseq = a.length == b.length;\n        while (iseq &amp;&amp; i &lt; a.length) {iseq = op_equals(a[i], b[i]); i+=1;}\n        return iseq;\n    } else if (a.constructor === Object &amp;&amp; b.constructor === Object) {\n        var akeys = Object.keys(a), bkeys = Object.keys(b);\n        akeys.sort(); bkeys.sort();\n        var i=0, k, iseq = op_equals(akeys, bkeys);\n        while (iseq &amp;&amp; i &lt; akeys.length)\n            {k=akeys[i]; iseq = op_equals(a[k], b[k]); i+=1;}\n        return iseq;\n    } return a == b;\n};\nvar _pyfunc_op_mult = function (a, b) { // nargs: 2\n    if ((typeof a === 'number') + (typeof b === 'number') === 1) {\n        if (a.constructor === String) return _pymeth_repeat.call(a, b);\n        if (b.constructor === String) return _pymeth_repeat.call(b, a);\n        if (Array.isArray(b)) {var t=a; a=b; b=t;}\n        if (Array.isArray(a)) {\n            var res = []; for (var i=0; i&lt;b; i++) res = res.concat(a);\n            return res;\n        }\n    } return a * b;\n};\nvar _pymeth_get = function (key, d) { // nargs: 1 2\n    if (this.constructor !== Object) return this.get.apply(this, arguments);\n    if (this[key] !== undefined) {return this[key];}\n    else if (d !== undefined) {return d;}\n    else {return null;}\n};\nvar _pymeth_repeat = function(count) { // nargs: 0\n    if (this.repeat) return this.repeat(count);\n    if (count &lt; 1) return '';\n    var result = '', pattern = this.valueOf();\n    while (count &gt; 1) {\n        if (count &amp; 1) result += pattern;\n        count &gt;&gt;= 1, pattern += pattern;\n    }\n    return result + pattern;\n};\nvar cb;\ncb = function flx_cb (source, ll, window) {\n    var act, data, i, line_visible, stub1_, x, y;\n    source = (source === undefined) ? source: source;\n    ll = (ll === undefined) ? ll: ll;\n    window = (window === undefined) ? null: window;\n    line_visible = (function flx_line_visible (arg) {\n        if (_pyfunc_op_equals(arg, 1)) {\n            ll.visible = true;\n        } else {\n            ll.visible = false;\n        }\n        return null;\n    }).bind(this);\n\n    data = source.data;\n    act = _pymeth_get.call(cb_obj, \"active\");\n    if (_pyfunc_op_contains(0, act)) {\n        stub1_ = [data[\"x\"], data[\"y\"]];\n        x = stub1_[0];y = stub1_[1];\n        for (i = 0; i &lt; x.length; i += 1) {\n            x[i] = _pyfunc_op_mult(x[i], 1.1);\n            y[i] = _pyfunc_op_mult(y[i], 2.0);\n        }\n    }\n    if (_pyfunc_op_contains(1, act)) {\n        line_visible(1);\n    }\n    if (_pyfunc_op_contains(2, act)) {\n        line_visible(0);\n    }\n    source.change.emit();\n    return null;\n};\ncb(source, ll, window);\n"},"id":"2189","type":"CustomJS"},{"attributes":{"children":[{"id":"2190","type":"CheckboxButtonGroup"}]},"id":"2191","type":"WidgetBox"},{"attributes":{"callback":null},"id":"2151","type":"DataRange1d"},{"attributes":{},"id":"2174","type":"HelpTool"},{"attributes":{},"id":"2241","type":"BasicTickFormatter"},{"attributes":{"callback":null},"id":"2153","type":"DataRange1d"},{"attributes":{"source":{"id":"2149","type":"ColumnDataSource"}},"id":"2188","type":"CDSView"},{"attributes":{},"id":"2155","type":"LinearScale"},{"attributes":{"bottom_units":"screen","fill_alpha":{"value":0.5},"fill_color":{"value":"lightgrey"},"left_units":"screen","level":"overlay","line_alpha":{"value":1.0},"line_color":{"value":"black"},"line_dash":[4,4],"line_width":{"value":2},"plot":null,"render_mode":"css","right_units":"screen","top_units":"screen"},"id":"2177","type":"BoxAnnotation"},{"attributes":{},"id":"2243","type":"BasicTickFormatter"},{"attributes":{},"id":"2157","type":"LinearScale"},{"attributes":{},"id":"2246","type":"UnionRenderers"},{"attributes":{"formatter":{"id":"2241","type":"BasicTickFormatter"},"plot":{"id":"2150","subtype":"Figure","type":"Plot"},"ticker":{"id":"2160","type":"BasicTicker"}},"id":"2159","type":"LinearAxis"},{"attributes":{},"id":"2247","type":"Selection"},{"attributes":{},"id":"2160","type":"BasicTicker"},{"attributes":{"plot":{"id":"2150","subtype":"Figure","type":"Plot"},"ticker":{"id":"2160","type":"BasicTicker"}},"id":"2163","type":"Grid"},{"attributes":{"formatter":{"id":"2243","type":"BasicTickFormatter"},"plot":{"id":"2150","subtype":"Figure","type":"Plot"},"ticker":{"id":"2165","type":"BasicTicker"}},"id":"2164","type":"LinearAxis"},{"attributes":{},"id":"2165","type":"BasicTicker"},{"attributes":{"dimension":1,"plot":{"id":"2150","subtype":"Figure","type":"Plot"},"ticker":{"id":"2165","type":"BasicTicker"}},"id":"2168","type":"Grid"}],"root_ids":["2192"]},"title":"Bokeh Application","version":"1.0.4"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  var docs_json = document.getElementById('2374').textContent;
+                  var render_items = [{"docid":"10b3f766-ee20-458f-b62a-aa272fac469b","roots":{"2192":"ee5ff5b8-e1c4-4fb8-9e65-28ac7f96cf68"}}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    var attempts = 0;
+                    var timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        embed_document(root);
+                        clearInterval(timer);
+                      }
+                      attempts++;
+                      if (attempts > 100) {
+                        console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                        clearInterval(timer);
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    
+  </body>
+  
+</html>
